@@ -1,0 +1,16 @@
+
+<igx-grid [width]="'1172px'" #grid1 id="grid1" [rowHeight]="30" [data]="stockQuote"
+[height]="'600px'" [autoGenerate]="false">
+<igx-column [pinned]="true" [sortable]="true" width="50px" field="TradeId" header="Trade Id" [dataType]="'number'"> </igx-column>
+<igx-column [sortable]="true" width="120px" field="TradeDate" header="Trade Date" dataType="string"></igx-column>
+<igx-column width="70px" field="BuySell" header="Buy Sell" dataType="string"></igx-column>
+<igx-column [sortable]="true" [dataType]="'number'" width="110px" field="Notional" header="Notional">
+</igx-column>
+<igx-column width="120px" [sortable]="true" field="Coupon" header="Coupon" dataType="number"></igx-column>
+<igx-column [sortable]="true" width="100px" field="Price" header="Price" dataType="number">
+</igx-column>
+<igx-column width="100px" field="Currency" header="Currency" dataType="string"></igx-column>
+<igx-column width="350px" field="ReferenceEntity" header="Reference Entity" dataType="string"></igx-column>
+<igx-column [sortable]="true" [pinned]="true" width="130px" field="Ticker" header="Ticker" dataType="string"></igx-column>
+<igx-column width="350px" field="ShortName" header="Short Name" dataType="string"></igx-column>
+</igx-grid>
